@@ -1,0 +1,2 @@
+i = "GOAT"
+print(*i)
