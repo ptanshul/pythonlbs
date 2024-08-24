@@ -162,6 +162,24 @@
         "documentation": {}
     },
     {
+        "label": "data",
+        "kind": 5,
+        "importPath": "pandaspy1",
+        "description": "pandaspy1",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [24, 27, 22, 32],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']\n}\ndf = pd.DataFrame(data)\nprint(df)",
+        "detail": "pandaspy1",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pandaspy1",
+        "description": "pandaspy1",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)",
+        "detail": "pandaspy1",
+        "documentation": {}
+    },
+    {
         "label": "add",
         "kind": 2,
         "importPath": "pytest1",
