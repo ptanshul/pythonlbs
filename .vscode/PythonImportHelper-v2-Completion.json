@@ -1,0 +1,128 @@
+[
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "pyodbc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyodbc",
+        "description": "pyodbc",
+        "detail": "pyodbc",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Block",
+        "kind": 6,
+        "importPath": "blockc1",
+        "description": "blockc1",
+        "peekOfCode": "class Block:\n    def __init__(self, index, timestamp, data, previous_hash):\n        self.index = index\n        self.timestamp = timestamp\n        self.data = data\n        self.previous_hash = previous_hash\n        self.hash = self.calculate_hash()\n    def calculate_hash(self):\n        return hashlib.sha256(\n            str(self.index).encode() +",
+        "detail": "blockc1",
+        "documentation": {}
+    },
+    {
+        "label": "Blockchain",
+        "kind": 6,
+        "importPath": "blockc1",
+        "description": "blockc1",
+        "peekOfCode": "class Blockchain:\n    def __init__(self):\n        self.chain = [self.create_genesis_block()]\n    def create_genesis_block(self):\n        return Block(0, datetime.datetime.now(), \"Genesis Block\", \"0\")\n    def get_latest_block(self):\n        return self.chain[-1]\n    def add_block(self, new_block):\n        new_block.previous_hash = self.get_latest_block().hash\n        new_block.hash = new_block.calculate_hash()",
+        "detail": "blockc1",
+        "documentation": {}
+    },
+    {
+        "label": "my_blockchain",
+        "kind": 5,
+        "importPath": "blockc1",
+        "description": "blockc1",
+        "peekOfCode": "my_blockchain = Blockchain()\n# Add new blocks\nmy_blockchain.add_block(Block(1, datetime.datetime.now(), \"Transaction Data\", \"\"))\nmy_blockchain.add_block(Block(2, datetime.datetime.now(), \"Another Transaction\", \"\"))\n# Check if the blockchain is valid\nprint(\"Is blockchain valid?\", my_blockchain.is_chain_valid())\n# Manipulate the chain (tampering with data)\nmy_blockchain.chain[1].data = \"Manipulated Data\"\n# Recheck validity after manipulation\nprint(\"Is blockchain valid after manipulation?\", my_blockchain.is_chain_valid())",
+        "detail": "blockc1",
+        "documentation": {}
+    },
+    {
+        "label": "my_blockchain.chain[1].data",
+        "kind": 5,
+        "importPath": "blockc1",
+        "description": "blockc1",
+        "peekOfCode": "my_blockchain.chain[1].data = \"Manipulated Data\"\n# Recheck validity after manipulation\nprint(\"Is blockchain valid after manipulation?\", my_blockchain.is_chain_valid())",
+        "detail": "blockc1",
+        "documentation": {}
+    },
+    {
+        "label": "print_available_odbc_drivers",
+        "kind": 2,
+        "importPath": "db1",
+        "description": "db1",
+        "peekOfCode": "def print_available_odbc_drivers():\n  \"\"\"Prints a list of available ODBC drivers.\"\"\"\n  drivers = pyodbc.drivers()\n  for driver in drivers:\n    print(driver)\nif __name__ == \"__main__\":\n  print_available_odbc_drivers()",
+        "detail": "db1",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "p2",
+        "description": "p2",
+        "peekOfCode": "i = \"GOAT\"\nprint(*i)",
+        "detail": "p2",
+        "documentation": {}
+    },
+    {
+        "label": "my_tuple",
+        "kind": 5,
+        "importPath": "p3",
+        "description": "p3",
+        "peekOfCode": "my_tuple = (10, 20, 30)\nprint(my_tuple[1])",
+        "detail": "p3",
+        "documentation": {}
+    },
+    {
+        "label": "Block",
+        "kind": 6,
+        "importPath": "p4",
+        "description": "p4",
+        "peekOfCode": "class Block:\n    def __init__(self, index, previous_hash, timestamp, data, hash):\n        self.index = index\n        self.previous_hash = previous_hash\n        self.timestamp = timestamp\n        self.data = data\n        self.hash = hash\n    @staticmethod\n    def calculate_hash(index, previous_hash, timestamp, data):\n        value = str(index) + previous_hash + str(timestamp) + str(data)",
+        "detail": "p4",
+        "documentation": {}
+    },
+    {
+        "label": "Blockchain",
+        "kind": 6,
+        "importPath": "p4",
+        "description": "p4",
+        "peekOfCode": "class Blockchain:\n    def __init__(self):\n        self.chain = [Block.create_genesis_block()]\n    def get_latest_block(self):\n        return self.chain[-1]\n    def add_block(self, data):\n        latest_block = self.get_latest_block()\n        new_index = latest_block.index + 1\n        new_timestamp = int(time.time())\n        new_hash = Block.calculate_hash(new_index, latest_block.hash, new_timestamp, data)",
+        "detail": "p4",
+        "documentation": {}
+    },
+    {
+        "label": "blockchain",
+        "kind": 5,
+        "importPath": "p4",
+        "description": "p4",
+        "peekOfCode": "blockchain = Blockchain()\nprint(\"Genesis block created:\")\nprint(blockchain)\nblockchain.add_block(\"First Block after Genesis\")\nblockchain.add_block(\"Second Block after Genesis\")\nblockchain.add_block(\"Third Block after Genesis\")\nprint(\"Blockchain after adding blocks:\")\nprint(blockchain)\n# Check if the blockchain is valid\nprint(\"Is blockchain valid?\", blockchain.is_chain_valid())",
+        "detail": "p4",
+        "documentation": {}
+    }
+]
