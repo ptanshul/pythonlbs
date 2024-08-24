@@ -189,6 +189,15 @@
         "documentation": {}
     },
     {
+        "label": "s",
+        "kind": 5,
+        "importPath": "pandaspy2",
+        "description": "pandaspy2",
+        "peekOfCode": "s = pd.Series([1, 3, 5, 7, 9])\nprint(s)",
+        "detail": "pandaspy2",
+        "documentation": {}
+    },
+    {
         "label": "add",
         "kind": 2,
         "importPath": "pytest1",
