@@ -27,6 +27,15 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -87,6 +96,24 @@
         "description": "db1",
         "peekOfCode": "def print_available_odbc_drivers():\n  \"\"\"Prints a list of available ODBC drivers.\"\"\"\n  drivers = pyodbc.drivers()\n  for driver in drivers:\n    print(driver)\nif __name__ == \"__main__\":\n  print_available_odbc_drivers()",
         "detail": "db1",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "numpy1",
+        "description": "numpy1",
+        "peekOfCode": "arr = np.array([1,2,3,4,5])\nresult = arr*2\nprint(result)",
+        "detail": "numpy1",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "numpy1",
+        "description": "numpy1",
+        "peekOfCode": "result = arr*2\nprint(result)",
+        "detail": "numpy1",
         "documentation": {}
     },
     {
