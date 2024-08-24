@@ -36,6 +36,15 @@
         "documentation": {}
     },
     {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
         "label": "Block",
         "kind": 6,
         "importPath": "blockc1",
@@ -123,6 +132,33 @@
         "description": "p4",
         "peekOfCode": "blockchain = Blockchain()\nprint(\"Genesis block created:\")\nprint(blockchain)\nblockchain.add_block(\"First Block after Genesis\")\nblockchain.add_block(\"Second Block after Genesis\")\nblockchain.add_block(\"Third Block after Genesis\")\nprint(\"Blockchain after adding blocks:\")\nprint(blockchain)\n# Check if the blockchain is valid\nprint(\"Is blockchain valid?\", blockchain.is_chain_valid())",
         "detail": "p4",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "pytest1",
+        "description": "pytest1",
+        "peekOfCode": "def add(x, y):\n    return x + y\ndef test_add():\n    assert add(2, 3) == 50\n    assert add(0, 0) == 0\ndef test_add_negative():\n    assert add(-7, -1) == -8",
+        "detail": "pytest1",
+        "documentation": {}
+    },
+    {
+        "label": "test_add",
+        "kind": 2,
+        "importPath": "pytest1",
+        "description": "pytest1",
+        "peekOfCode": "def test_add():\n    assert add(2, 3) == 50\n    assert add(0, 0) == 0\ndef test_add_negative():\n    assert add(-7, -1) == -8",
+        "detail": "pytest1",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_negative",
+        "kind": 2,
+        "importPath": "pytest1",
+        "description": "pytest1",
+        "peekOfCode": "def test_add_negative():\n    assert add(-7, -1) == -8",
+        "detail": "pytest1",
         "documentation": {}
     }
 ]
