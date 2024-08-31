@@ -1,5 +1,30 @@
 [
     {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "calculator",
+        "description": "calculator",
+        "isExtraImport": true,
+        "detail": "calculator",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "importPath": "calculator",
+        "description": "calculator",
+        "isExtraImport": true,
+        "detail": "calculator",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -54,15 +79,6 @@
         "documentation": {}
     },
     {
-        "label": "pytest",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pytest",
-        "description": "pytest",
-        "detail": "pytest",
-        "documentation": {}
-    },
-    {
         "label": "add",
         "kind": 2,
         "importPath": ".git.calculator",
@@ -78,6 +94,33 @@
         "description": ".git.calculator",
         "peekOfCode": "def subtract(a, b):\n    \"\"\"Return the difference between two numbers.\"\"\"\n    return a - b",
         "detail": ".git.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "test_add",
+        "kind": 2,
+        "importPath": ".git.test_calculator",
+        "description": ".git.test_calculator",
+        "peekOfCode": "def test_add():\n    assert add(2, 3) == 5\n    assert add(-1, 1) == 0\n    assert add(0, 0) == 0\ndef test_subtract():\n    assert subtract(5, 3) == 2\n    assert subtract(3, 5) == -2\n    assert subtract(0, 0) == 0\n# Optionally, you can include a test for expected exceptions\ndef test_add_type_error():",
+        "detail": ".git.test_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "test_subtract",
+        "kind": 2,
+        "importPath": ".git.test_calculator",
+        "description": ".git.test_calculator",
+        "peekOfCode": "def test_subtract():\n    assert subtract(5, 3) == 2\n    assert subtract(3, 5) == -2\n    assert subtract(0, 0) == 0\n# Optionally, you can include a test for expected exceptions\ndef test_add_type_error():\n    with pytest.raises(TypeError):\n        add('a', 2)",
+        "detail": ".git.test_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_type_error",
+        "kind": 2,
+        "importPath": ".git.test_calculator",
+        "description": ".git.test_calculator",
+        "peekOfCode": "def test_add_type_error():\n    with pytest.raises(TypeError):\n        add('a', 2)",
+        "detail": ".git.test_calculator",
         "documentation": {}
     },
     {
