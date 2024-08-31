@@ -1,5 +1,14 @@
 [
     {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
         "label": "pytest",
         "kind": 6,
         "isExtraImport": true,
@@ -70,15 +79,6 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "add",
         "kind": 2,
         "importPath": ".git.calculator",
@@ -94,6 +94,24 @@
         "description": ".git.calculator",
         "peekOfCode": "def subtract(a, b):\n    \"\"\"Return the difference between two numbers.\"\"\"\n    return a - b",
         "detail": ".git.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": ".git.pandas2",
+        "description": ".git.pandas2",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [25, 30, 35, 40],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']\n}\ndf = pd.DataFrame(data)\nprint(df)",
+        "detail": ".git.pandas2",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": ".git.pandas2",
+        "description": ".git.pandas2",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)",
+        "detail": ".git.pandas2",
         "documentation": {}
     },
     {
