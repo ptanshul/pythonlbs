@@ -63,6 +63,24 @@
         "documentation": {}
     },
     {
+        "label": "add",
+        "kind": 2,
+        "importPath": ".git.calculator",
+        "description": ".git.calculator",
+        "peekOfCode": "def add(a, b):\n    \"\"\"Return the sum of two numbers.\"\"\"\n    return a + b\ndef subtract(a, b):\n    \"\"\"Return the difference between two numbers.\"\"\"\n    return a - b",
+        "detail": ".git.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": ".git.calculator",
+        "description": ".git.calculator",
+        "peekOfCode": "def subtract(a, b):\n    \"\"\"Return the difference between two numbers.\"\"\"\n    return a - b",
+        "detail": ".git.calculator",
+        "documentation": {}
+    },
+    {
         "label": "Block",
         "kind": 6,
         "importPath": "blockc1",
