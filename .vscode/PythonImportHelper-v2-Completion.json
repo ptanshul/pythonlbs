@@ -198,6 +198,132 @@
         "documentation": {}
     },
     {
+        "label": "drivers",
+        "kind": 5,
+        "importPath": "pthondb1",
+        "description": "pthondb1",
+        "peekOfCode": "drivers = pyodbc.drivers()\nprint(\"Available ODBC drivers:\")\nfor driver in drivers:\n    print(driver)",
+        "detail": "pthondb1",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "server = 'mydbss.database.windows.net'\ndatabase = 'mydb'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Establish the connection\nconnection_string = f'DRIVER={ODBC Driver 17 for SQL Server};Server=tcp:mydbss.database.windows.net,1433;Database=mydb;Uid=adminn;Pwd={Azure@123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30';\nconn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "database = 'mydb'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Establish the connection\nconnection_string = f'DRIVER={ODBC Driver 17 for SQL Server};Server=tcp:mydbss.database.windows.net,1433;Database=mydb;Uid=adminn;Pwd={Azure@123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30';\nconn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()\n# Step 1: Create a simple table",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "username = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Establish the connection\nconnection_string = f'DRIVER={ODBC Driver 17 for SQL Server};Server=tcp:mydbss.database.windows.net,1433;Database=mydb;Uid=adminn;Pwd={Azure@123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30';\nconn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()\n# Step 1: Create a simple table\ncreate_table_query = \"\"\"",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "password = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Establish the connection\nconnection_string = f'DRIVER={ODBC Driver 17 for SQL Server};Server=tcp:mydbss.database.windows.net,1433;Database=mydb;Uid=adminn;Pwd={Azure@123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30';\nconn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()\n# Step 1: Create a simple table\ncreate_table_query = \"\"\"\nIF NOT EXISTS (",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "driver = '{ODBC Driver 17 for SQL Server}'\n# Establish the connection\nconnection_string = f'DRIVER={ODBC Driver 17 for SQL Server};Server=tcp:mydbss.database.windows.net,1433;Database=mydb;Uid=adminn;Pwd={Azure@123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30';\nconn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()\n# Step 1: Create a simple table\ncreate_table_query = \"\"\"\nIF NOT EXISTS (\n    SELECT * FROM sys.tables WHERE name = 'TestTable'",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "connection_string",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "connection_string = f'DRIVER={ODBC Driver 17 for SQL Server};Server=tcp:mydbss.database.windows.net,1433;Database=mydb;Uid=adminn;Pwd={Azure@123};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30';\nconn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()\n# Step 1: Create a simple table\ncreate_table_query = \"\"\"\nIF NOT EXISTS (\n    SELECT * FROM sys.tables WHERE name = 'TestTable'\n)\nCREATE TABLE TestTable (",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "conn = pyodbc.connect(connection_string)\n# Create a cursor object using the connection\ncursor = conn.cursor()\n# Step 1: Create a simple table\ncreate_table_query = \"\"\"\nIF NOT EXISTS (\n    SELECT * FROM sys.tables WHERE name = 'TestTable'\n)\nCREATE TABLE TestTable (\n    ID INT PRIMARY KEY,",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "cursor = conn.cursor()\n# Step 1: Create a simple table\ncreate_table_query = \"\"\"\nIF NOT EXISTS (\n    SELECT * FROM sys.tables WHERE name = 'TestTable'\n)\nCREATE TABLE TestTable (\n    ID INT PRIMARY KEY,\n    Name NVARCHAR(50),\n    Age INT",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "create_table_query",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "create_table_query = \"\"\"\nIF NOT EXISTS (\n    SELECT * FROM sys.tables WHERE name = 'TestTable'\n)\nCREATE TABLE TestTable (\n    ID INT PRIMARY KEY,\n    Name NVARCHAR(50),\n    Age INT\n)\n\"\"\"",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "insert_query",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "insert_query = \"INSERT INTO TestTable (ID, Name, Age) VALUES (?, ?, ?)\"\ndata = [\n    (1, 'Alice', 30),\n    (2, 'Bob', 25),\n    (3, 'Charlie', 35)\n]\ncursor.executemany(insert_query, data)\nconn.commit()\n# Step 3: Retrieve data from the table\nselect_query = \"SELECT * FROM TestTable\"",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "data = [\n    (1, 'Alice', 30),\n    (2, 'Bob', 25),\n    (3, 'Charlie', 35)\n]\ncursor.executemany(insert_query, data)\nconn.commit()\n# Step 3: Retrieve data from the table\nselect_query = \"SELECT * FROM TestTable\"\ncursor.execute(select_query)",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "select_query",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "select_query = \"SELECT * FROM TestTable\"\ncursor.execute(select_query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(f'ID: {row.ID}, Name: {row.Name}, Age: {row.Age}')\n# Close the connection\ncursor.close()\nconn.close()",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
+        "label": "rows",
+        "kind": 5,
+        "importPath": "pthondb2",
+        "description": "pthondb2",
+        "peekOfCode": "rows = cursor.fetchall()\nfor row in rows:\n    print(f'ID: {row.ID}, Name: {row.Name}, Age: {row.Age}')\n# Close the connection\ncursor.close()\nconn.close()",
+        "detail": "pthondb2",
+        "documentation": {}
+    },
+    {
         "label": "add",
         "kind": 2,
         "importPath": "pytest1",
@@ -222,6 +348,15 @@
         "description": "pytest1",
         "peekOfCode": "def test_add_negative():\n    assert add(-7, -1) == -8\n#\n#====================================================== 2 passed in 0.04s ======================================================= \n#PS H:\\python\\python-hyd\\pythonlbs> python -m pytest pytest1.py\n#===================================================== test session starts ======================================================\n#platform win32 -- Python 3.11.9, pytest-8.3.2, pluggy-1.5.0\n#rootdir: H:\\python\\python-hyd\\pythonlbs\n#collected 2 items                                                                                                                \n#pytest1.py ..                                                                                                             [100%] ",
         "detail": "pytest1",
+        "documentation": {}
+    },
+    {
+        "label": "colore",
+        "kind": 5,
+        "importPath": "pythonlist1",
+        "description": "pythonlist1",
+        "peekOfCode": "colore = ['red','orange']\nprint(colore)",
+        "detail": "pythonlist1",
         "documentation": {}
     }
 ]
