@@ -355,7 +355,7 @@
         "kind": 5,
         "importPath": "pythonlist1",
         "description": "pythonlist1",
-        "peekOfCode": "colore = ['red','orange']\nprint(colore)\ncolore.extend(['blue'])\nprint(colore)",
+        "peekOfCode": "colore = ['red','orange']\nprint(colore)\ncolore.extend(['blue','black'])\nprint(colore)\ncolore.append(['yellow','green'])\nprint(colore)",
         "detail": "pythonlist1",
         "documentation": {}
     }
