@@ -1,20 +1,20 @@
 [
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "pyodbc",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pyodbc",
         "description": "pyodbc",
         "detail": "pyodbc",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
@@ -97,6 +97,15 @@
         "documentation": {}
     },
     {
+        "label": "drivers",
+        "kind": 5,
+        "importPath": ".git.chkodbc",
+        "description": ".git.chkodbc",
+        "peekOfCode": "drivers = pyodbc.drivers()\nprint(\"Available ODBC drivers:\")\nfor driver in drivers:\n    print(driver)",
+        "detail": ".git.chkodbc",
+        "documentation": {}
+    },
+    {
         "label": "data",
         "kind": 5,
         "importPath": ".git.pandas2",
@@ -119,7 +128,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "server = '<your_server>.database.windows.net'\ndatabase = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)",
+        "peekOfCode": "server = 'mydbss.database.windows.net'\ndatabase = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -128,7 +137,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "database = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")",
+        "peekOfCode": "database = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -137,7 +146,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "username = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:",
+        "peekOfCode": "username = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -146,7 +155,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "password = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")",
+        "peekOfCode": "password = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -155,7 +164,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "driver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()",
+        "peekOfCode": "driver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -164,7 +173,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "connection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()\n# Create a cursor object to execute SQL queries\ncursor = connection.cursor()",
+        "peekOfCode": "connection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()\n# Create a cursor object to execute SQL queries\ncursor = connection.cursor()",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -173,7 +182,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "cursor = connection.cursor()\n# Write a simple SQL query\nquery = \"SELECT TOP 5 * FROM <your_table>\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection",
+        "peekOfCode": "cursor = connection.cursor()\n# Write a simple SQL query\nquery = \"SELECT TOP 5 * FROM school\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
@@ -182,7 +191,7 @@
         "kind": 5,
         "importPath": ".git.pythonsql1",
         "description": ".git.pythonsql1",
-        "peekOfCode": "query = \"SELECT TOP 5 * FROM <your_table>\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection\ncursor.close()\nconnection.close()",
+        "peekOfCode": "query = \"SELECT TOP 5 * FROM school\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection\ncursor.close()\nconnection.close()",
         "detail": ".git.pythonsql1",
         "documentation": {}
     },
