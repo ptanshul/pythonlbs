@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "pyodbc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyodbc",
+        "description": "pyodbc",
+        "detail": "pyodbc",
+        "documentation": {}
+    },
+    {
         "label": "pytest",
         "kind": 6,
         "isExtraImport": true,
@@ -49,15 +58,6 @@
         "importPath": "hashlib",
         "description": "hashlib",
         "detail": "hashlib",
-        "documentation": {}
-    },
-    {
-        "label": "pyodbc",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pyodbc",
-        "description": "pyodbc",
-        "detail": "pyodbc",
         "documentation": {}
     },
     {
@@ -112,6 +112,87 @@
         "description": ".git.pandas2",
         "peekOfCode": "df = pd.DataFrame(data)\nprint(df)",
         "detail": ".git.pandas2",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "server = '<your_server>.database.windows.net'\ndatabase = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "database = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "username = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "password = 'Azure@123'\ndriver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "driver = '{ODBC Driver 17 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "connection_string",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "connection_string = f'Driver={driver};Server={server};Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()\n# Create a cursor object to execute SQL queries\ncursor = connection.cursor()",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "cursor = connection.cursor()\n# Write a simple SQL query\nquery = \"SELECT TOP 5 * FROM <your_table>\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "query = \"SELECT TOP 5 * FROM <your_table>\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection\ncursor.close()\nconnection.close()",
+        "detail": ".git.pythonsql1",
+        "documentation": {}
+    },
+    {
+        "label": "rows",
+        "kind": 5,
+        "importPath": ".git.pythonsql1",
+        "description": ".git.pythonsql1",
+        "peekOfCode": "rows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection\ncursor.close()\nconnection.close()",
+        "detail": ".git.pythonsql1",
         "documentation": {}
     },
     {
