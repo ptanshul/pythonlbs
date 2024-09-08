@@ -344,7 +344,7 @@
         "kind": 5,
         "importPath": "pandaspy1",
         "description": "pandaspy1",
-        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [24, 27, 22, 32],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']\n}\ndf = pd.DataFrame(data)\nprint(df)",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [24, 27, 22, 32],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']\n}\ndf = pd.DataFrame(data)\nprint(df)\nprint(df.loc[1])",
         "detail": "pandaspy1",
         "documentation": {}
     },
@@ -353,7 +353,7 @@
         "kind": 5,
         "importPath": "pandaspy1",
         "description": "pandaspy1",
-        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)\nprint(df.loc[1])",
         "detail": "pandaspy1",
         "documentation": {}
     },
@@ -517,6 +517,15 @@
         "description": "pytest1",
         "peekOfCode": "def test_add_negative():\n    assert add(-7, -1) == -8\n#\n#====================================================== 2 passed in 0.04s ======================================================= \n#PS H:\\python\\python-hyd\\pythonlbs> python -m pytest pytest1.py\n#===================================================== test session starts ======================================================\n#platform win32 -- Python 3.11.9, pytest-8.3.2, pluggy-1.5.0\n#rootdir: H:\\python\\python-hyd\\pythonlbs\n#collected 2 items                                                                                                                \n#pytest1.py ..                                                                                                             [100%] ",
         "detail": "pytest1",
+        "documentation": {}
+    },
+    {
+        "label": "zoolist",
+        "kind": 5,
+        "importPath": "pythonlist-1",
+        "description": "pythonlist-1",
+        "peekOfCode": "zoolist = [\"monkey\",\"lion\",\"cow\",\"lion\"]\nprint(zoolist)\n## More about list ###\n# ordered , Changeble, allow duplicates",
+        "detail": "pythonlist-1",
         "documentation": {}
     },
     {
