@@ -4,5 +4,5 @@
 ##################################################
 ##################################################
 
-mytuple = ("apple", "banana", "cherry","apple")
+mytuple = ("apple", "banana", "cherry")
 print(mytuple)
