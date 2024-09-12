@@ -17,3 +17,7 @@ print(len(mytuple))
 
 print(mytuple[-2])
 print(mytuple[-3])
+
+############################
+if "cat" in mytuple:
+    print("yes")
