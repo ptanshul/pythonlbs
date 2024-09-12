@@ -536,5 +536,14 @@
         "peekOfCode": "colore = ['red','orange']\nprint(colore)\ncolore.extend(['blue','black'])\nprint(colore)   \ncolore.append(['yellow','green'])\nprint(colore)",
         "detail": "pythonlist1",
         "documentation": {}
+    },
+    {
+        "label": "mytuple",
+        "kind": 5,
+        "importPath": "pythontuple1",
+        "description": "pythontuple1",
+        "peekOfCode": "mytuple = (\"apple\", \"banana\", \"cherry\")\nprint(mytuple)",
+        "detail": "pythontuple1",
+        "documentation": {}
     }
 ]
