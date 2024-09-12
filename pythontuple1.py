@@ -6,3 +6,8 @@
 
 mytuple = ("apple", "banana", "cherry")
 print(mytuple)
+
+###########################################
+## Length of tuple
+###########################################
+print(len(mytuple))
