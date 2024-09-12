@@ -4,7 +4,7 @@
 ##################################################
 ##################################################
 
-mytuple = ("apple", "banana", "cherry")
+mytuple = ("apple", "banana", "cherry","orange", "kiwi", "melon", "mango")
 print(mytuple)
 
 ###########################################
@@ -13,4 +13,7 @@ print(mytuple)
 print(len(mytuple))
 
 #######################################
-print(mytuple[-1])
+######################################
+
+print(mytuple[-2])
+print(mytuple[-3])

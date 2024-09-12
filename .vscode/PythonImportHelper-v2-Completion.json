@@ -542,7 +542,7 @@
         "kind": 5,
         "importPath": "pythontuple1",
         "description": "pythontuple1",
-        "peekOfCode": "mytuple = (\"apple\", \"banana\", \"cherry\")\nprint(mytuple)\n###########################################\n## Length of tuple\n###########################################\nprint(len(mytuple))\n#######################################\nprint(mytuple[-1])",
+        "peekOfCode": "mytuple = (\"apple\", \"banana\", \"cherry\",\"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(mytuple)\n###########################################\n## Length of tuple\n###########################################\nprint(len(mytuple))\n#######################################\n######################################\nprint(mytuple[-2])\nprint(mytuple[-3])",
         "detail": "pythontuple1",
         "documentation": {}
     }
