@@ -11,3 +11,6 @@ print(mytuple)
 ## Length of tuple
 ###########################################
 print(len(mytuple))
+
+#######################################
+print(mytuple[-1])
