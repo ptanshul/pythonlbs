@@ -545,32 +545,5 @@
         "peekOfCode": "mytuple = (\"apple\", \"banana\", \"cherry\",\"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(mytuple)\n###########################################\n## Length of tuple\n###########################################\nprint(len(mytuple))\n#######################################\n######################################\nprint(mytuple[-2])\nprint(mytuple[-3])",
         "detail": "pythontuple1",
         "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "quiz1",
-        "description": "quiz1",
-        "peekOfCode": "x = 5\ny = 2\nresult = x ** y\nprint(result)",
-        "detail": "quiz1",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "quiz1",
-        "description": "quiz1",
-        "peekOfCode": "y = 2\nresult = x ** y\nprint(result)",
-        "detail": "quiz1",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "quiz1",
-        "description": "quiz1",
-        "peekOfCode": "result = x ** y\nprint(result)",
-        "detail": "quiz1",
-        "documentation": {}
     }
 ]
