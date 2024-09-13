@@ -79,14 +79,6 @@
         "documentation": {}
     },
     {
-        "label": "result",
-        "importPath": "numpy1",
-        "description": "numpy1",
-        "isExtraImport": true,
-        "detail": "numpy1",
-        "documentation": {}
-    },
-    {
         "label": "add",
         "kind": 2,
         "importPath": ".git.calculator",
