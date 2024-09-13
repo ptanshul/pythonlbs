@@ -79,6 +79,14 @@
         "documentation": {}
     },
     {
+        "label": "progress",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
         "label": "add",
         "kind": 2,
         "importPath": ".git.calculator",
