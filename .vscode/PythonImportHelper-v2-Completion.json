@@ -289,7 +289,7 @@
         "kind": 5,
         "importPath": "lambda1",
         "description": "lambda1",
-        "peekOfCode": "r = lambda a: a+15\nprint(r(30))\nt = lambda b: b+10\nprint(t(5))",
+        "peekOfCode": "r = lambda a: a+15\nprint(r(30))\nt = lambda b: b+10\nprint(t(5))\nx = lambda m: m+5\nprint(x(2))\nq = lambda g:g+20\nprint(q(10))",
         "detail": "lambda1",
         "documentation": {}
     },
@@ -298,7 +298,25 @@
         "kind": 5,
         "importPath": "lambda1",
         "description": "lambda1",
-        "peekOfCode": "t = lambda b: b+10\nprint(t(5))",
+        "peekOfCode": "t = lambda b: b+10\nprint(t(5))\nx = lambda m: m+5\nprint(x(2))\nq = lambda g:g+20\nprint(q(10))",
+        "detail": "lambda1",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "lambda1",
+        "description": "lambda1",
+        "peekOfCode": "x = lambda m: m+5\nprint(x(2))\nq = lambda g:g+20\nprint(q(10))",
+        "detail": "lambda1",
+        "documentation": {}
+    },
+    {
+        "label": "q",
+        "kind": 5,
+        "importPath": "lambda1",
+        "description": "lambda1",
+        "peekOfCode": "q = lambda g:g+20\nprint(q(10))",
         "detail": "lambda1",
         "documentation": {}
     },
