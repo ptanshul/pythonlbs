@@ -285,6 +285,15 @@
         "documentation": {}
     },
     {
+        "label": "r",
+        "kind": 5,
+        "importPath": "lambda1",
+        "description": "lambda1",
+        "peekOfCode": "r = lambda a: a+15\nprint(r(10))",
+        "detail": "lambda1",
+        "documentation": {}
+    },
+    {
         "label": "arr",
         "kind": 5,
         "importPath": "numpy1",
