@@ -289,7 +289,16 @@
         "kind": 5,
         "importPath": "lambda1",
         "description": "lambda1",
-        "peekOfCode": "r = lambda a: a+15\nprint(r(10))",
+        "peekOfCode": "r = lambda a: a+15\nprint(r(30))\nt = lambda b: b+10\nprint(t(5))",
+        "detail": "lambda1",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "lambda1",
+        "description": "lambda1",
+        "peekOfCode": "t = lambda b: b+10\nprint(t(5))",
         "detail": "lambda1",
         "documentation": {}
     },
