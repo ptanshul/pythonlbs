@@ -242,6 +242,15 @@
         "documentation": {}
     },
     {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "pp1",
+        "description": "pp1",
+        "peekOfCode": "friends = ['Taylor', 'Alex', 'Pat', 'Eli']\nfor friend in friends:\n    print(\"Hi \" + friend)",
+        "detail": "pp1",
+        "documentation": {}
+    },
+    {
         "label": "drivers",
         "kind": 5,
         "importPath": "pthondb1",
