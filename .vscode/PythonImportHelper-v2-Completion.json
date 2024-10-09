@@ -1,48 +1,5 @@
 [
     {
-        "label": "pyodbc",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pyodbc",
-        "description": "pyodbc",
-        "detail": "pyodbc",
-        "documentation": {}
-    },
-    {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
-        "label": "pytest",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pytest",
-        "description": "pytest",
-        "detail": "pytest",
-        "documentation": {}
-    },
-    {
-        "label": "add",
-        "importPath": "calculator",
-        "description": "calculator",
-        "isExtraImport": true,
-        "detail": "calculator",
-        "documentation": {}
-    },
-    {
-        "label": "subtract",
-        "importPath": "calculator",
-        "description": "calculator",
-        "isExtraImport": true,
-        "detail": "calculator",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -58,6 +15,15 @@
         "importPath": "hashlib",
         "description": "hashlib",
         "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "pyodbc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyodbc",
+        "description": "pyodbc",
+        "detail": "pyodbc",
         "documentation": {}
     },
     {
@@ -79,6 +45,15 @@
         "documentation": {}
     },
     {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
         "label": "progress",
         "importPath": "rich.progress",
         "description": "rich.progress",
@@ -87,156 +62,12 @@
         "documentation": {}
     },
     {
-        "label": "add",
-        "kind": 2,
-        "importPath": ".git.calculator",
-        "description": ".git.calculator",
-        "peekOfCode": "def add(a, b):\n    \"\"\"Return the sum of two numbers.\"\"\"\n    return a + b\ndef subtract(a, b):\n    \"\"\"Return the difference between two numbers.\"\"\"\n    return a - b",
-        "detail": ".git.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "subtract",
-        "kind": 2,
-        "importPath": ".git.calculator",
-        "description": ".git.calculator",
-        "peekOfCode": "def subtract(a, b):\n    \"\"\"Return the difference between two numbers.\"\"\"\n    return a - b",
-        "detail": ".git.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "drivers",
-        "kind": 5,
-        "importPath": ".git.chkodbc",
-        "description": ".git.chkodbc",
-        "peekOfCode": "drivers = pyodbc.drivers()\nprint(\"Available ODBC drivers:\")\nfor driver in drivers:\n    print(driver)",
-        "detail": ".git.chkodbc",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": ".git.pandas2",
-        "description": ".git.pandas2",
-        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [25, 30, 35, 40],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']\n}\ndf = pd.DataFrame(data)\nprint(df)",
-        "detail": ".git.pandas2",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": ".git.pandas2",
-        "description": ".git.pandas2",
-        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)",
-        "detail": ".git.pandas2",
-        "documentation": {}
-    },
-    {
-        "label": "server",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "server = 'mydbss.database.windows.net'\ndatabase = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "database",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "database = 'mydbss'\nusername = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful !!!\")",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "username",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "username = 'adminn'\npassword = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful !!!\")\nexcept Exception as e:",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "password",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "password = 'Azure@123'\ndriver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful !!!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "driver",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "driver = '{ODBC Driver 18 for SQL Server}'\n# Connection string\nconnection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful !!!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "connection_string",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "connection_string = f'Driver={driver};Server=tcp:mydbss.database.windows.net,1433;Database=school;Uid=adminn;Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'\n# Establish a connection\ntry:\n    connection = pyodbc.connect(connection_string)\n    print(\"Connection successful !!!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n    exit()\n# Create a cursor object to execute SQL queries\ncursor = connection.cursor()",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "cursor",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "cursor = connection.cursor()\n# Write a simple SQL query\nquery = \"SELECT TOP 5 * FROM school\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "query",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "query = \"SELECT TOP 5 * FROM school\"\n# Execute the query\ncursor.execute(query)\n# Fetch and print the results\nrows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection\ncursor.close()\nconnection.close()",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "rows",
-        "kind": 5,
-        "importPath": ".git.pythonsql1",
-        "description": ".git.pythonsql1",
-        "peekOfCode": "rows = cursor.fetchall()\nfor row in rows:\n    print(row)\n# Close the connection\ncursor.close()\nconnection.close()",
-        "detail": ".git.pythonsql1",
-        "documentation": {}
-    },
-    {
-        "label": "test_add",
-        "kind": 2,
-        "importPath": ".git.test_calculator",
-        "description": ".git.test_calculator",
-        "peekOfCode": "def test_add():\n    assert add(2, 3) == 51\n    assert add(-1, 1) == 20\n    assert add(0, 0) == 0\ndef test_subtract():\n    assert subtract(5, 3) == 2\n    assert subtract(3, 5) == -2\n    assert subtract(0, 0) == 0\n# Optionally, you can include a test for expected exceptions\ndef test_add_type_error():",
-        "detail": ".git.test_calculator",
-        "documentation": {}
-    },
-    {
-        "label": "test_subtract",
-        "kind": 2,
-        "importPath": ".git.test_calculator",
-        "description": ".git.test_calculator",
-        "peekOfCode": "def test_subtract():\n    assert subtract(5, 3) == 2\n    assert subtract(3, 5) == -2\n    assert subtract(0, 0) == 0\n# Optionally, you can include a test for expected exceptions\ndef test_add_type_error():\n    with pytest.raises(TypeError):\n        add('a', 21)",
-        "detail": ".git.test_calculator",
-        "documentation": {}
-    },
-    {
-        "label": "test_add_type_error",
-        "kind": 2,
-        "importPath": ".git.test_calculator",
-        "description": ".git.test_calculator",
-        "peekOfCode": "def test_add_type_error():\n    with pytest.raises(TypeError):\n        add('a', 21)",
-        "detail": ".git.test_calculator",
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
         "documentation": {}
     },
     {
