@@ -116,6 +116,24 @@
         "documentation": {}
     },
     {
+        "label": "decorator_function",
+        "kind": 2,
+        "importPath": "decorator1",
+        "description": "decorator1",
+        "peekOfCode": "def decorator_function(fun):\n    def wrapper_function():\n        print(\"wash hands and wash face \")\n        fun()\n        print(\"Bartan dona bartan dona\")\n    return wrapper_function\n@decorator_function\ndef khana_banana():\n    print(\"Cook food Cook Nice food !!!!!\")\nkhana_banana()",
+        "detail": "decorator1",
+        "documentation": {}
+    },
+    {
+        "label": "khana_banana",
+        "kind": 2,
+        "importPath": "decorator1",
+        "description": "decorator1",
+        "peekOfCode": "def khana_banana():\n    print(\"Cook food Cook Nice food !!!!!\")\nkhana_banana()",
+        "detail": "decorator1",
+        "documentation": {}
+    },
+    {
         "label": "r",
         "kind": 5,
         "importPath": "lambda1",
