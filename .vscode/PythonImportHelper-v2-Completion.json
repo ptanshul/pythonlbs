@@ -183,16 +183,16 @@
         "kind": 2,
         "importPath": "generator2",
         "description": "generator2",
-        "peekOfCode": "def squares(n):\n  \"\"\"Returns a list of squares from 0 to n-1.\"\"\"\n  result = []\n  for i in range(n):\n    result.append(i * i)\n  return result\n# Generator function\ndef squares_generator(n):\n  \"\"\"Generates squares from 0 to n-1.\"\"\"\n  for i in range(n):",
+        "peekOfCode": "def squares(n):\n  \"\"\"Returns a list of squares from 0 to n-1.\"\"\"\n  result = []\n  for i in range(n):\n    result.append(i * i)\n  return result\n# Generator function\ndef squares1(n):\n  \"\"\"Generates squares from 0 to n-1.\"\"\"\n  for i in range(n):",
         "detail": "generator2",
         "documentation": {}
     },
     {
-        "label": "squares_generator",
+        "label": "squares1",
         "kind": 2,
         "importPath": "generator2",
         "description": "generator2",
-        "peekOfCode": "def squares_generator(n):\n  \"\"\"Generates squares from 0 to n-1.\"\"\"\n  for i in range(n):\n    yield i * i\n# Using the functions\nnum_list = squares(5)  # [0, 1, 4, 9, 16]\nprint(num_list)",
+        "peekOfCode": "def squares1(n):\n  \"\"\"Generates squares from 0 to n-1.\"\"\"\n  for i in range(n):\n    yield i * i\n# Using the functions\nnum_list = squares(5)  # [0, 1, 4, 9, 16]\nprint(num_list)\nnum_list1 = squares1(5)  # [0, 1, 4, 9, 16]\nprint(num_list1)",
         "detail": "generator2",
         "documentation": {}
     },
@@ -201,7 +201,16 @@
         "kind": 5,
         "importPath": "generator2",
         "description": "generator2",
-        "peekOfCode": "num_list = squares(5)  # [0, 1, 4, 9, 16]\nprint(num_list)",
+        "peekOfCode": "num_list = squares(5)  # [0, 1, 4, 9, 16]\nprint(num_list)\nnum_list1 = squares1(5)  # [0, 1, 4, 9, 16]\nprint(num_list1)",
+        "detail": "generator2",
+        "documentation": {}
+    },
+    {
+        "label": "num_list1",
+        "kind": 5,
+        "importPath": "generator2",
+        "description": "generator2",
+        "peekOfCode": "num_list1 = squares1(5)  # [0, 1, 4, 9, 16]\nprint(num_list1)",
         "detail": "generator2",
         "documentation": {}
     },

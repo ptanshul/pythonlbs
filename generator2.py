@@ -6,7 +6,7 @@ def squares(n):
   return result
 
 # Generator function
-def squares_generator(n):
+def squares1(n):
   """Generates squares from 0 to n-1."""
   for i in range(n):
     yield i * i
@@ -14,3 +14,6 @@ def squares_generator(n):
 # Using the functions
 num_list = squares(5)  # [0, 1, 4, 9, 16]
 print(num_list)
+
+num_list1 = squares1(5)  # [0, 1, 4, 9, 16]
+print(num_list1)
