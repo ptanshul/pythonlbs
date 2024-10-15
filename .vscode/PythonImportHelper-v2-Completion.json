@@ -18,6 +18,15 @@
         "documentation": {}
     },
     {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
         "label": "pyodbc",
         "kind": 6,
         "isExtraImport": true,
@@ -104,6 +113,33 @@
         "description": "blockc1",
         "peekOfCode": "my_blockchain.chain[1].data = \"Manipulated Data\"\n# Recheck validity after manipulation\nprint(\"Is blockchain valid after manipulation?\", my_blockchain.is_chain_valid())",
         "detail": "blockc1",
+        "documentation": {}
+    },
+    {
+        "label": "original_dict",
+        "kind": 5,
+        "importPath": "copy1",
+        "description": "copy1",
+        "peekOfCode": "original_dict = {\n    \"user1\": [\"book1\", \"book2\"],\n    \"user2\": [\"book3\", \"book4\"]\n}\nshallow_copy = copy.copy(original_dict)\ndeep_copy = copy.deepcopy(original_dict)\n# Modify a nested list in the shallow copy\nshallow_copy[\"user1\"].append(\"book5\")\nprint(\"Original:\", original_dict)\n# Output: Original: {'user1': ['book1', 'book2', 'book5'], 'user2': ['book3', 'book4']}",
+        "detail": "copy1",
+        "documentation": {}
+    },
+    {
+        "label": "shallow_copy",
+        "kind": 5,
+        "importPath": "copy1",
+        "description": "copy1",
+        "peekOfCode": "shallow_copy = copy.copy(original_dict)\ndeep_copy = copy.deepcopy(original_dict)\n# Modify a nested list in the shallow copy\nshallow_copy[\"user1\"].append(\"book5\")\nprint(\"Original:\", original_dict)\n# Output: Original: {'user1': ['book1', 'book2', 'book5'], 'user2': ['book3', 'book4']}\nprint(\"Shallow:\", shallow_copy)\n# Output: Shallow: {'user1': ['book1', 'book2', 'book5'], 'user2': ['book3', 'book4']}\nprint(\"Deep:\", deep_copy)\n# Output: Deep: {'user1': ['book1', 'book2'], 'user2': ['book3', 'book4']}",
+        "detail": "copy1",
+        "documentation": {}
+    },
+    {
+        "label": "deep_copy",
+        "kind": 5,
+        "importPath": "copy1",
+        "description": "copy1",
+        "peekOfCode": "deep_copy = copy.deepcopy(original_dict)\n# Modify a nested list in the shallow copy\nshallow_copy[\"user1\"].append(\"book5\")\nprint(\"Original:\", original_dict)\n# Output: Original: {'user1': ['book1', 'book2', 'book5'], 'user2': ['book3', 'book4']}\nprint(\"Shallow:\", shallow_copy)\n# Output: Shallow: {'user1': ['book1', 'book2', 'book5'], 'user2': ['book3', 'book4']}\nprint(\"Deep:\", deep_copy)\n# Output: Deep: {'user1': ['book1', 'book2'], 'user2': ['book3', 'book4']}",
+        "detail": "copy1",
         "documentation": {}
     },
     {
