@@ -170,6 +170,15 @@
         "documentation": {}
     },
     {
+        "label": "even_numbers",
+        "kind": 2,
+        "importPath": "generator1",
+        "description": "generator1",
+        "peekOfCode": "def even_numbers(n):\n  for i in range(n):\n    if i % 2 == 0:\n      yield i\n# Using the generator\nfor number in even_numbers(10):\n  print(number)",
+        "detail": "generator1",
+        "documentation": {}
+    },
+    {
         "label": "r",
         "kind": 5,
         "importPath": "lambda1",
