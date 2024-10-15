@@ -170,6 +170,24 @@
         "documentation": {}
     },
     {
+        "label": "fibonacci_generator",
+        "kind": 2,
+        "importPath": "fibnacci",
+        "description": "fibnacci",
+        "peekOfCode": "def fibonacci_generator():\n  \"\"\"Generates an infinite sequence of Fibonacci numbers.\"\"\"\n  a, b = 0, 1\n  while True:\n    yield a\n    a, b = b, a + b\n# Using the generator\nfib_gen = fibonacci_generator()\n# Print the first 10 Fibonacci numbers\nfor _ in range(10):",
+        "detail": "fibnacci",
+        "documentation": {}
+    },
+    {
+        "label": "fib_gen",
+        "kind": 5,
+        "importPath": "fibnacci",
+        "description": "fibnacci",
+        "peekOfCode": "fib_gen = fibonacci_generator()\n# Print the first 10 Fibonacci numbers\nfor _ in range(10):\n  print(next(fib_gen))",
+        "detail": "fibnacci",
+        "documentation": {}
+    },
+    {
         "label": "even_numbers",
         "kind": 2,
         "importPath": "generator1",
@@ -183,7 +201,7 @@
         "kind": 2,
         "importPath": "generator2",
         "description": "generator2",
-        "peekOfCode": "def squares1(n):\n  \"\"\"Generates squares from 0 to n-1.\"\"\"\n  for i in range(n):\n    yield i * i \nnum_list1 = squares1(5)  # [0, 1, 4, 9, 16]\nprint(num_list1)",
+        "peekOfCode": "def squares1(n):\n  \"\"\"Generates squares from 0 to n-1.\"\"\"\n  for i in range(n):\n    yield i \nnum_list1 = squares1(5)  # [0, 1, 4, 9, 16]\nprint(num_list1)",
         "detail": "generator2",
         "documentation": {}
     },
