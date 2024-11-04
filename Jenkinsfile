@@ -24,6 +24,7 @@ pipeline {
         stage('docker container') {
             steps {
                 sh 'docker run -d -p 9092:8080 --name anshulc2 anshulit'
+                   // ###  ## http://ip-address:9092   ### to access
             }
         }
     }
