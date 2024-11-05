@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+    
+    tools{
+        maven 'mvm399'
+    }
+
+    stages {
+        stage('git clone') {
+            steps {
+                git credentialsId: 'github', url: 'https://github.com/anshulmb/SpringMVCFormApp.git'
+            }
+        }
+        stage('maven build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        stage('sonar review') {
+            steps {
+                withSonarQubeEnv('sonarserver') {
+                sh 'mvn sonar:sonar'
+                    }
+            }
+        }
+        
+        stage('nexus artifact uploader') {
+            steps {
+                nexusArtifactUploader artifacts: [[artifactId: 'SpringMVCFormApp', classifier: '', file: 'target/SpringFormApp.war', type: 'war']], credentialsId: 'nexus', groupId: 'in.anshul', nexusUrl: '165.22.222.77:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'anshulrepos', version: '1.0-SNAPSHOT'
+            }
+        }
+        
+        stage('deploy to tomcat ') {
+            steps {
+                deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://143.110.190.189:9090/')], contextPath: 'springmvcappp', war: 'target/SpringFormApp.war'
+            }
+        }
+        
+    }
+}
